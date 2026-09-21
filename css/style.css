@@ -454,11 +454,11 @@ table {
 }
 /* ==========================================================================Hero========================================================================== */
 .hero {
-	background: url('../img/portfolio/ian.jpg') right bottom no-repeat;
-	background-size: contain;
-	padding:110px 0 100px 0;
-	height:auto;
-	background-color: #FBFBFB;
+    background: url('../img/portfolio/ian.jpg') right bottom no-repeat;
+    background-size: contain;
+    padding: 110px 0 100px 0;
+    height: auto;
+    background-color: #FBFBFB;
 }
 .hero h1 {
 	font-size: 120px;
@@ -1180,44 +1180,30 @@ ul.slides li {
 
 
 /** Responsive fixes **/
-@media screen and (max-width:767px) {
-	.inner {
-    padding-top: 10px;
-    text-align: center;
-	}
+@media (max-width: 768px) {
+    .hero {
+        /* Move image to bottom-center or adjust size so text doesn't overlap */
+        background-position: center bottom;
+        background-size: 70% auto; /* Adjust percentage to fit mobile properly */
+        padding-bottom: 260px; /* Space reserved for the portrait photo at the bottom */
+    }
 
-	.hero h3 {
-	    letter-spacing: 10px;
-	}
+    .hero h1 {
+        font-size: 55px; /* Downscale large titles for narrow mobile screens */
+        line-height: 50px;
+        letter-spacing: -2px;
+        text-align: center;
+    }
 
-
-	.hero {
-	    padding-bottom: 0;
-	}
-
-	.subscribe input[type=text] {
-	    width: 50%;
-	    margin-bottom: 30px;
-	}
-
-	.btn-send {
-	    float: none;
-	
-	    margin-bottom: 80px;
-	}
-	.effects .img {
-    	margin-bottom: 15px;
-	}
-	.show-menu .icon-list a {
-		display: block;
-		width: 100%;
-		float: left;
-		margin-bottom: 10px;
-	}
-
-	.show-menu .menu-wrap {
-		height: 100%;
-	}
+    .hero h3 {
+        font-size: 14px;
+        letter-spacing: 8px;
+        text-align: center;
+    }
+    
+    .inner {
+        padding-top: 60px; /* Reduces excessive top padding on phones */
+    }
 }
 
 
