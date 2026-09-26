@@ -17,6 +17,16 @@
     background: #fff url('../img/portfolio/download.jpg') no-repeat center center;
 	
 }
+@media only screen and (max-width: 767px) {
+
+    #preloader {
+        width: 100vw;
+        height: 100vh;
+        background-size: 100% auto;
+        background-position: center center;
+    }
+
+}
 
 
 
@@ -452,40 +462,47 @@ table {
 	-webkit-transition-delay:0.5s;
 	transition-delay: 0.5s;
 }
-/* ==========================================================================Hero========================================================================== */
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
 .hero {
     background: url('../img/portfolio/ian.jpg') right bottom no-repeat;
     background-size: contain;
-    padding: 90px 0 85px 0;
+    padding: 85px 0 80px 0;
     height: auto;
     background-color: #FBFBFB;
 }
+
 .hero h1 {
-	font-size: 100px;
-	letter-spacing: -8px;
-	margin: 0;
-	font-weight: 500;
-	line-height: 90px;
-	text-transform: uppercase;
+    font-size: 100px;
+    letter-spacing: -5px;
+    margin: 0;
+    padding-right: 80px;
+    font-weight: 500;
+    line-height: 90px;
+    text-transform: uppercase;
 }
+
 .hero h1 span {
-	color:#a1a9b0;
-	/* display:inline-block; */
+    color: rgba(0, 0, 0, 0);
 }
+
 .hero h3 {
-	font-size: 20px;
-	margin:0;
-	padding:0;
-	opacity:0.5;
-	color: #E04343;
-	letter-spacing: 18px;
-	line-height: 50px;
-	text-transform: uppercase;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    opacity: 0.5;
+    color: #E04343;
+    letter-spacing: 18px;
+    line-height: 50px;
+    text-transform: uppercase;
 }
+
 .hero p {
-	letter-spacing:1px;
-	color:#fff;
-	font-size: 15px;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 15px;
 }
 /* Boucing Arrow Animation */
 @keyframes arrowbounce {
@@ -1178,86 +1195,93 @@ ul.slides li {
 
 
 
+/* ==========================================================================
+   Mobile Responsive Hero
+   ========================================================================== */
 
-/** Responsive fixes **/
-@media (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+
     .hero {
-        /* Move image to bottom-center or adjust size so text doesn't overlap */
+        position: relative;
+        background-size: 320px auto;
         background-position: center bottom;
-        background-size: 70% auto; /* Adjust percentage to fit mobile properly */
-        padding-bottom: 260px; /* Space reserved for the portrait photo at the bottom */
+        padding: 40px 0 0 0;
+        min-height: 570px;
+        height: 570px;
+        background-color: #FBFBFB;
+    }
+
+    .hero .row {
+        margin: 0;
+    }
+
+    .hero .inner {
+        width: 100%;
+        margin: 0;
+        padding: 0 15px;
+        text-align: center;
     }
 
     .hero h1 {
-        font-size: 55px; /* Downscale large titles for narrow mobile screens */
+        font-size: 55px;
         line-height: 50px;
-        letter-spacing: -2px;
+        letter-spacing: -3px;
+        padding: 0;
+        margin: 0 auto;
         text-align: center;
     }
 
     .hero h3 {
         font-size: 14px;
-        letter-spacing: 8px;
+        line-height: 30px;
+        letter-spacing: 7px;
+        margin: 15px 0 0 0;
+        padding: 0;
         text-align: center;
     }
-    
-    .inner {
-        padding-top: 60px; /* Reduces excessive top padding on phones */
+
+    .hero h3 .rotate {
+        display: inline-block;
     }
-}
+
+    .hero p {
+        font-size: 14px;
+    }
 
 
-@media screen and (max-width:991px) {
-	.hero {
-    	padding: 0px;
-	}
+    /* =========================================================
+       SEE MORE
+       ========================================================= */
 
-	.subscribe {
-	    padding-bottom: 40px;
-	}
-}
-.name{
-	margin: 3px;
-}
-#hi{
-	display: inline;
-}
-.you{
-	padding: 10px;
-	width: 300px;
-	border: 2px solid red;
-	border-right:1px solid blue;
-	border-left: 1px solid green;
-	border-top: 1px solid orangered;
-	border-bottom: 1px solid yellow;
-	border-radius: 8px;
-}
-.mess{
-	text-align: center;
-	padding: 80px;
-	width: 600px;
-	border: 2px solid red;
-	border-right:1px solid blue;
-	border-left: 1px solid green;
-	border-top: 1px solid orangered;
-	border-bottom: 1px solid yellow;
-	border-radius: 8px;
-}
-.btn{
-	color: black;
-	border-right:1px solid blue;
-	border-left: 1px solid green;
-	border-top: 1px solid orangered;
-	border-bottom: 1px solid yellow;
-}
-.you::placeholder{
-	color: black;
-}
-.mess::placeholder{
-	color:#000;
-}
-h3{
-	color:black;
-	font-weight: bold;
-	font-size: 20px;
+    .hero .see-more-row {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+        margin: 0;
+        z-index: 10;
+    }
+
+    .hero .see-more {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .hero .see-more p {
+        margin: 0 0 8px 0;
+        color:red;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .hero .see-more .scrollto--arrow {
+        margin: 0;
+		color:red;
+    }
+
+    .hero .see-more .scrollto--arrow img {
+        width: 35px;
+        height: auto;
+    }
+
 }
