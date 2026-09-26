@@ -456,16 +456,16 @@ table {
 .hero {
     background: url('../img/portfolio/ian.jpg') right bottom no-repeat;
     background-size: contain;
-    padding: 110px 0 100px 0;
+    padding: 90px 0 85px 0;
     height: auto;
     background-color: #FBFBFB;
 }
 .hero h1 {
-	font-size: 120px;
+	font-size: 100px;
 	letter-spacing: -8px;
 	margin: 0;
-	font-weight: 600;
-	line-height: 95px;
+	font-weight: 500;
+	line-height: 90px;
 	text-transform: uppercase;
 }
 .hero h1 span {
