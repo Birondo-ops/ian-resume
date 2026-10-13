@@ -233,54 +233,87 @@
         CERTIFICATES SECTION 
     =========================== -->
     <section id="certificates">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <center><h1 class="arrow">My <span>Certificates</span></h1></center>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3 wp3">
-        <div class="certificate-box">
-          
-          <!-- Image Wrapper with Clickable Overlay -->
-          <div class="cert-img-wrapper">
-            <img  src="img/portfolio/cert.jpg" alt="Data Analytics Essentials Certificate" class="img-responsive cert-img">
-            <div class="cert-img-overlay">
-              <button type="button" class="btn btn-view-img" data-toggle="modal" data-target="#certModal">
-                <i class="fa fa-search-plus"></i> View Image
-              </button>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <center><h1 class="arrow">My <span>Certificates</span></h1></center>
+          </div>
+        </div>
+        
+        <div class="row">
+          <!-- Certificate 1: Data Analytics Essentials -->
+          <div class="col-md-6 wp3">
+            <div class="certificate-box">
+              <div class="cert-img-wrapper">
+                <img src="img/portfolio/cert.jpg" alt="Data Analytics Essentials Certificate" class="img-responsive cert-img">
+                <div class="cert-img-overlay">
+                  <button type="button" class="btn btn-view-img" data-toggle="modal" data-target="#certModal">
+                    <i class="fa fa-search-plus"></i> View Image
+                  </button>
+                </div>
+              </div>
+              <div class="cert-content">
+                <h3>Data Analytics Essentials</h3>
+                <p class="issuer"><strong>Issuer:</strong> Cisco Networking Academy (Credly / Skills for All)</p>
+                <p class="issue-date"><strong>Date Issued:</strong> June 24, 2026</p>
+                <p class="dark-text">Certified in data cleaning, exploratory data analysis, visual storytelling, and SQL analytical workflows.</p>
+              </div>
             </div>
           </div>
 
-          <div class="cert-content">
-            <h3>Data Analytics Essentials</h3>
-            <p class="issuer"><strong>Issuer:</strong> Cisco Networking Academy (Credly / Skills for All)</p>
-            <p class="issue-date"><strong>Date Issued:</strong> June 24, 2026</p>
-            <p class="dark-text">Certified in data cleaning, exploratory data analysis, visual storytelling, and SQL analytical workflows.</p>
-        
+          <!-- Certificate 2: Python Essentials 1 -->
+          <div class="col-md-6 wp3 delay-05s">
+            <div class="certificate-box">
+              <div class="cert-img-wrapper">
+                <img src="img/portfolio/py-cert.jpeg" alt="Python Essentials 1 Certificate" class="img-responsive cert-img">
+                <div class="cert-img-overlay">
+                  <button type="button" class="btn btn-view-img" data-toggle="modal" data-target="#pyCertModal">
+                    <i class="fa fa-search-plus"></i> View Image
+                  </button>
+                </div>
+              </div>
+              <div class="cert-content">
+                <h3>Python Essentials 1</h3>
+                <p class="issuer"><strong>Issuer:</strong> Cisco Networking Academy (Credly / Skills for All)</p>
+                <p class="issue-date"><strong>Date Issued:</strong> October 3, 2026</p>
+                <p class="dark-text">Certified in foundational Python programming concepts, data types, control flow and list, and functions.</p>
+              </div>
+            </div>
           </div>
-
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Modal Popup for Viewing Certificate Image -->
-  <div class="modal fade" id="certModal" tabindex="-1" role="dialog" aria-labelledby="certModalLabel">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="certModalLabel">Data Analytics Essentials - Certificate Preview</h4>
-        </div>
-        <div class="modal-body text-center">
-          <img src="img/portfolio/cert.jpg" alt="Full Certificate Image" class="img-responsive modal-cert-img">
+      <!-- Modal Popup for Data Analytics Certificate -->
+      <div class="modal fade" id="certModal" tabindex="-1" role="dialog" aria-labelledby="certModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="certModalLabel">Data Analytics Essentials - Certificate Preview</h4>
+            </div>
+            <div class="modal-body text-center">
+              <img src="img/portfolio/cert.jpg" alt="Full Certificate Image" class="img-responsive modal-cert-img">
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+
+      <!-- Modal Popup for Python Essentials 1 Certificate -->
+      <div class="modal fade" id="pyCertModal" tabindex="-1" role="dialog" aria-labelledby="pyCertModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="pyCertModalLabel">Python Essentials 1 - Certificate Preview</h4>
+            </div>
+            <div class="modal-body text-center">
+              <img src="img/portfolio/py-cert.jpeg" alt="Full Certificate Image" class="img-responsive modal-cert-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- ==========================
         CONTACT SECTION
